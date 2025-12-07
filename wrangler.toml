@@ -1,0 +1,16 @@
+name = "realix-github-downloader"
+main = "index.js"   # Worker kodingiz joylashgan fayl
+compatibility_date = "2025-12-07"
+
+# Agar environment qo‘shmoqchi bo‘lsangiz
+[vars]
+# Masalan, GitHub API token kerak bo‘lsa (private repo uchun)
+GITHUB_TOKEN = "your_github_token_here"
+
+# Worker’ni dev/test uchun sozlash
+[dev]
+port = 8787
+
+# Agar R2 storage yoki boshqa binding kerak bo‘lsa
+# [r2_buckets]
+# MY_BUCKET = { binding = "MY_BUCKET", bucket_name = "realix-storage" }
